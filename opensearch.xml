@@ -1,5 +1,14 @@
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-<ShortName>Yoshified Google</ShortName>
-<Image width="16" height="16"/>
-<Url type="text/html" method="GET" template="https://haroscre1441.github.io?q={searchTerms}"/>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+ xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+ <ShortName>Yoshified Google</ShortName>
+ <InputEncoding>UTF-8</InputEncoding>
+ <Image width="16" height="16" type="image/x-icon"></Image>
+ <Image width="64" height="64" type="image/png"></Image>
+ <Url type="text/html" template="haroscre1441.github.io">
+  <Param name="q" value="{searchTerms}"></Param>
+ </Url>
+ <moz:SearchForm>https://haroscre1441.github.io</moz:SearchForm>
+ <Url type="application/opensearchdescription+xml" rel="self"
+  template="https://haroscre1441.github.io/opensearch.xml">
+ </Url>
 </OpenSearchDescription>
