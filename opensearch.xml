@@ -2,9 +2,7 @@
  xmlns:moz="http://www.mozilla.org/2006/browser/search/">
  <ShortName>Yoshified Google</ShortName>
  <InputEncoding>UTF-8</InputEncoding>
- <Image width="16" height="16" type="image/x-icon"></Image>
- <Image width="64" height="64" type="image/png"></Image>
- <Url type="text/html" template="haroscre1441.github.io">
+ <Url type="text/html" template="haroscre1441.github.io/search">
   <Param name="q" value="{searchTerms}"></Param>
  </Url>
  <moz:SearchForm>https://haroscre1441.github.io</moz:SearchForm>
