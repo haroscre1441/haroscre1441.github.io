@@ -1,12 +1,9 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
- xmlns:moz="http://www.mozilla.org/2006/browser/search/">
- <ShortName>Yoshified Google</ShortName>
- <InputEncoding>UTF-8</InputEncoding>
- <Url type="text/html" template="haroscre1441.github.io/search">
-  <Param name="q" value="{searchTerms}"></Param>
- </Url>
- <moz:SearchForm>https://haroscre1441.github.io</moz:SearchForm>
- <Url type="application/opensearchdescription+xml" rel="self"
-  template="https://haroscre1441.github.io/opensearch.xml">
- </Url>
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>YG</ShortName>
+  <Description>Yoshified Google</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon"></Image>
+  <Image height="64" width="64" type="image/png"></Image>
+  <Url type="text/html" template="https://haroscre1441.github.io/search?q={searchTerms}"/>
 </OpenSearchDescription>
