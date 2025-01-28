@@ -3,7 +3,8 @@
   <ShortName>YG</ShortName>
   <Description>Yoshified Google</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon"></Image>
-  <Image height="64" width="64" type="image/png"></Image>
+  <Image height="16" width="16" type="image/x-icon">https://haroscre1441.github.io/favicon/favicon.ico</Image>
+  <Image height="64" width="64" type="image/png">https://haroscre1441.github.io/favicon/android-chrome-64x64.png</Image>
   <Url type="text/html" template="https://haroscre1441.github.io/search?q={searchTerms}"/>
+  <moz:SearchForm>https://haroscre1441.github.io</moz:SearchForm>
 </OpenSearchDescription>
