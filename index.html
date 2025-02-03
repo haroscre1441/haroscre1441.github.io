@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoshified Google</title>
     <link rel="icon" href="https://haroscre1441.github.io/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="search" type="application/opensearchdescription+xml" title="Yoshified Google" href="https://haroscre1441.github.io/opensearch.xml" />
+    <link rel="search" type="application/opensearchdescription+xml" title="Yoshified Google" href="https://haroscre1441.github.io/os/opensearch.xml" />
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -19,7 +19,8 @@
 
       h1 {
         text-align: center;
-        color: #333;
+        font-size: 48px;
+		color: #00ff00;
       }
 
       #searchinput {
@@ -59,15 +60,21 @@
         border-radius: 4px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
+	  
+	  a {
+	    margin: 5px;
+	  }
     </style>
   </head>
   <body>
-    <h1 style="color: #00ff00">Yoshified Google</h1>
+    <h1>Yoshified Google</h1>
     <input id="searchinput" autocomplete="off" placeholder="Search the web">
     <div>
       <button id="searchbtn" onclick="searchresults()">Search</button>
       <button id="searchbtn" onclick="searchresults_images()">Image Search</button>
     </div>
+	<a href="https://haroscre1441.github.io/about">Learn more about Yoshified Google</a>
+	
     <script>
       var input = document.getElementById("searchinput");
 
