@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow">
 	<link rel="icon" href="https://haroscre1441.github.io/favicon/favicon.ico" type="image/x-icon" />
-    <title>Yoshified Google</title>
+    <title>??? - Yoshified Google</title>
+    <style>
+      .gcsc-find-more-on-google {
+        display: none !important
+      }
+    </style>
   </head>
   <body>
-    <div class="gcse-searchbox"></div>
-    <div class="gcse-searchresults"></div>
+    <div class="gcse-searchbox" data-gname="yoshifiedgooglesearch"></div>
+    <div class="gcse-searchresults" data-gname="yoshifiedgooglesearch"></div>
 	
     <script async src="https://cse.google.com/cse.js?cx=b799695f0619841f3"></script>
+	
+	<script>
+	  var query = google.search.cse.element.getElement('yoshifiedgooglesearch').getInputQuery();
+	  document.title = query + " - Yoshified Google";
+	</script>
   </body>
 </html>
