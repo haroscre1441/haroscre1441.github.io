@@ -9,19 +9,27 @@
     <link rel="search" type="application/opensearchdescription+xml" title="Yoshified Google" href="https://haroscre1441.github.io/os/opensearch.xml" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <style>
+	  * {
+	    box-sizing: border-box;
+	  }
+	  
       body {
         font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
+        background-color: #3fba54;
         margin: 0;
         padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-
+      
+	  p {
+	    color: white;
+	  }
+	  
       #searchbox {
 		display: flex;
-		flex-direction: row;
+		flex-direction: wrap;
         align-items: center;
 		margin: 0;
 	  }
@@ -44,6 +52,7 @@
 
       button {
 	    padding: 10px 20px;
+		margin: 3px;
         font-size: 16px;
         background-color: #4CAF50;
         color: white;
@@ -58,21 +67,47 @@
 
 	  a {
 	    margin: 5px;
+		text-align: center;
+	  }
+	  
+	  #searchui {
+	    padding: 6px;
+	    background: #00990088;
+		border-radius: 16px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  }
+	  
+	  #hoveredtext {
+		transition: text-decoration;
+	  }
+	  
+	  #hoveredtext:hover {
+		text-decoration: underline;
 	  }
     </style>
   </head>
   <body>
-    <h1>Yoshified Google</h1>
-    <div id="searchbox">
-      <input id="searchinput" autocomplete="off" placeholder="Search the web" />
-	  <div id="searchbtns">
+    <div id="searchui">
+      <h1><span id="hoveredtext" onclick="playthemainsound()">Yoshi</span><span>fied</span><span style="color: white"> Google</span></h1>
+      <div id="searchbox">
+        <input id="searchinput" placeholder="Search the web" />
         <button id="searchbtn" onclick="searchresults()"><span class="material-icons">&#xe8b6;</span></button>
         <button id="searchbtn" onclick="searchresults_images()"><span class="material-icons">&#xe43f;</span></button>
-	  </div>
-    </div>
+      </div>
+	</div>
+	<br>
 	<a href="https://haroscre1441.github.io/about">Learn more about Yoshified Google</a>
-	
+	<p>Powered by Google CSE</p>
     <script>
+      function playthemainsound() {
+	    var snds = ["snd/1.wav", "snd/2.wav", "snd/3.wav", "snd/4.wav", "snd/5.wav", "snd/6.wav", "snd/7.wav", "snd/8.wav", "snd/9.wav", "snd/10.wav"];
+        var randomsnd = Math.floor(Math.random() * snds.length);
+		
+        var audio = new Audio(snds[randomsnd]);
+		
+        audio.play();
+      }	  
+	
       var input = document.getElementById("searchinput");
 
       function searchresults() {
