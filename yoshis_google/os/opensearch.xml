@@ -1,0 +1,10 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>YG</ShortName>
+  <Description>Yoshified Google</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image height="16" width="16" type="image/x-icon">https://haroscre1441.github.io/favicon/favicon.ico</Image>
+  <Image height="64" width="64" type="image/png">https://haroscre1441.github.io/favicon/android-chrome-64x64.png</Image>
+  <Url type="text/html" template="https://haroscre1441.github.io/yoshis_google/search?q={searchTerms}"/>
+  <moz:SearchForm>https://haroscre1441.github.io/yoshis_google</moz:SearchForm>
+</OpenSearchDescription>
